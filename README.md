@@ -6,7 +6,6 @@ Created animated mincrointeractions to add movement and feedback to the checkout
 
 Insert image of sketches showing the overall storyboard that was created to understand what the plan was.
 
-
 I started by creating sketches showing what the storyboard of the purchasing animations would look like. I started with understanding the general idea of what I wanted. Because this is a website to purchase spoon rings, I wanted all the interactions to be spoon related. I also understood this needed to be catered to the full experience of the purchasing process. What happens when the customer clicks on the "add to cart" button and how do we show that the item was added to cart. I mainly worked on providing feedback to the customer after the interactions.
 
 
