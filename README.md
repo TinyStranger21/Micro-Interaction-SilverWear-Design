@@ -4,9 +4,7 @@ Created animated mincrointeractions to add movement and feedback to the checkout
 
 ## Planning
 
-Insert image of sketches showing the overall storyboard that was created to understand what the plan was.
-
-I started by creating sketches showing what the storyboard of the purchasing animations would look like. I started with understanding the general idea of what I wanted. Because this is a website to purchase spoon rings, I wanted all the interactions to be spoon related. I also understood this needed to be catered to the full experience of the purchasing process. What happens when the customer clicks on the "add to cart" button and how do we show that the item was added to cart. I mainly worked on providing feedback to the customer after the interactions.
+I started by creating sketches showing what the storyboard of the purchasing animations would look like. I started with understanding the general idea of what I wanted. Because this is a website to purchase spoon rings, I wanted all the interactions to be spoon related. I also understood this needed to be catered to the full experience of the purchasing process. What happens when the customer clicks on the ""add to cart"" button and how do we show that the item was added to cart. I mainly worked on providing feedback to the customer after the interactions.
 
 
 # Execution
@@ -25,22 +23,30 @@ One thing I felt really good about with this animation was the stars. Adding thi
 
 The last part of this animation came to me after asking severaly people what was off, because it didn't feel complete. At the end of the animation, the cart reacts to the spoon entering with a slight spring animation. This brings a lot empahesis on the final spoon delivery to the cart and provides a sense of closure.
 
-## Animation 2: Add to Cart
+## Animation 2: Add to cart
 
-After I creating the end of the buying experience, I started working on what the initial add to cart experience would be like. The core elements of this animation I wanted to achieve were: A seamless text to shape change, a loading experience to provide the customer with a comfortable understanding of the item being added to cart, and final delivery to the cart in the corner animation.
+After I creating the end of the buying experience, I started working on what the initial "add to cart" experience would be like. The core elements of this animation I wanted to achieve were: A seamless text to shape change, a loading experience to provide the customer with a comfortable understanding of the item being added to cart, and final delivery to the cart in the corner animation.
 
 In a book ive read recently, User Friendly by Cliff Kuang and Robert Fabricant, they talk about how some developers and designers purposefully implement loading into products and websites. This creates a sense of trust because it feels like the product is thinking. If the exprience is too quick, its easy to question if the interaction actaully worked. This is a core thing I wanted to add into my animation and I did this through adding a spinning spoon to mimick a classic loading animation.
 
-Once the spoon did its three spins, it exits the add to cart button borders and the added to cart animation starts with a very slight delay. I wanted to feel fluid so getting the correct amount of delay that would feel like the spoon that left the add to cart was then the spoon that was added to cart. In short, I wanted to make it like one continuous animation.
+Once the spoon did its three spins, it exits the "add to cart" button borders and the added to cart animation starts with a very slight delay. I wanted to feel fluid so getting the correct amount of delay that would feel like the spoon that left the "add to cart" was then the spoon that was added to cart. In short, I wanted to make it like one continuous animation.
 
 # Implementation
 
 ## Figma Layout
 
-Before immediatly implementing the animations into the website, I needed to understand what my purchasing page would look like when the spoon is selected. I followed a pretty standard product layout, pictures of product left, title of product top right, description text below title, add to cart below description text. I wanted to make sure the size and weight were most communicated in the purchasing process. I transfered this layout directctly into Cursor in order to get a general idea while also allowing Cursor to accomadate to my current styling in the website.
+Before immediatly implementing the animations into the website, I needed to understand what my purchasing page would look like when the spoon is selected. I followed a pretty standard product layout, pictures of product left, title of product top right, description text below title, "add to cart" below description text. I wanted to make sure the size and weight were most communicated in the purchasing process. I transfered this layout directctly into Cursor in order to get a general idea while also allowing Cursor to accomadate to my current styling in the website.
 
 ## Final web implementation with Cursor
 
+Working with Cursor to implement these animations was, for the most part, not bad. The biggest issues I encountered was placement, sizing, and timing the animations. A lot of CSS is based off left, right, top, bottom, relatives, and offsets, which make it pretty annoying to really get the correct placement for the animtion. One thing I did that made this difficult was I made the actual cart a seperate png than the gif which makes the png look like its animated. This meant I needed the sizing and the placement the exact same in order to make the experience seem seamless.
 
+Once I got this figured out, I moved into adding a number interaction for the cart. Everytime time the "add to cart" button was pushed, the cart spoon animation would play, and once it finished, and red number would intidicate it was added to cart. This number would increase by one everytime the animation would run through a cycle, not immediatly after the "add to cart" button was clicked.
+
+Once I got this function made, I started implementing the "add to cart" loading animation to the "add to cart" button. This animation would play immediatly after clicking, then run one time through. I made the animation a white box that overlays the "add to cart" text so that it can seamlessly add into the button. I needed to create a time delay function that would run the "spoon to ring to cart" animation when the spoon left the "add to cart" box. For this animation process to work everytime the "add to cart button was pressed, I told Cursor it need to reset the gif so that it plays from the beginning everytime, instead of just playing the gif, which would lead to off animation timelimes.
+
+# Conclusion
+
+I think this turned out very well. I am addicted to clicking this button and watching the animation go through. I would say my biggest takeaways from this project mainly came from working with after effects. There are better ways to get a custom motion that just working with the pen tool, and spending way too much time working with eases and trying to the motion in one path, is not worth it.
 
 
